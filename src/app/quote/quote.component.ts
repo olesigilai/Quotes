@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { from } from 'rxjs';
 import { Quote } from '../quote';
 @Component({
   selector: 'app-quote',
@@ -16,6 +15,9 @@ export class QuoteComponent implements OnInit {
     new Quote(5,'Solve math homework','Damn Math',new Date(2019,2,14)),
     new Quote(6,'Plot my world domination plan','Cause I am an evil overlord',new Date(2019,3,14)),
   ];
+  toggleQuotes(index:any){
+    this.quotes[index].showContent = !this.quotes[index].showContent;
+  }
   
   deleteQuote(isComplete:any, index:any){
     if (isComplete) {
@@ -32,11 +34,8 @@ export class QuoteComponent implements OnInit {
     quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote)
   }
-  toggleDetails(index:any){
-    this.quotes[index].showContent = !this.quotes[index].showContent;
-  }
- 
-  constructor() { }
+  
+ constructor() { }
 
   ngOnInit(): void {
   }

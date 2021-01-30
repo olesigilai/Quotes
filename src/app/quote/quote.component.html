@@ -1,8 +1,22 @@
-<h1>My Goals</h1>
-<hr>
-<ul>
-  <div *ngFor='let quote of quotes;let i = index'>
-    <li>{{quote.name}}</li>
-    <button (click)='toggleDetails(i)'>Toggle Quotes</button>
+<div class="container">
+  <h1>My Quotes</h1>
+  <hr>
+
+  <div class="row">
+    <div class="col-md-6">
+      <div *ngFor='let quotes of quotes;let i = index'>
+        <div>
+          <button (click)='toggleQuotes(i)' class="btn btn-primary">Toggle Quotes</button>
+        </div>
+
+        <div *ngIf='quote.showDescription'>
+          <app-quote-chil  [quote]='quote' (isComplete) = 'deleteQuote($event,i)'></app-quote-chil>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <app-quote-form></app-quote-form>
+    </div>
   </div>
-</ul>
+ 
+</div>
