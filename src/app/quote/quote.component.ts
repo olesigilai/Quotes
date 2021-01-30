@@ -17,7 +17,7 @@ export class QuoteComponent implements OnInit {
     new Quote(6,'Plot my world domination plan','Cause I am an evil overlord',new Date(2019,3,14)),
   ];
   toggleDetails(index:any){
-    this.quotes[index].showDescription = !this.quotes[index].showDescription;
+    this.quotes[index].showContent = !this.quotes[index].showContent;
   }
   deleteQuote(isComplete:any, index:any){
     if (isComplete) {
