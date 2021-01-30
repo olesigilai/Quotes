@@ -6,7 +6,7 @@ import { Quote } from '../quote';
   templateUrl: './quote.component.html',
   styleUrls: ['./quote.component.css']
 })
-export class GoalComponent implements OnInit {
+export class QuoteComponent implements OnInit {
 
   quotes: Quote[] = [
     new Quote(1, 'Watch finding Nemo', 'Find an online version and watch merlin find his son',new Date(2019,9,14)),
