@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 .container{
-    font-family: 'Lobster', cursive;
+    font-family: 'Shrikhand', cursive;
     background-color: lightblue;
+    color: black;
     
 
 }
@@ -12,4 +13,5 @@ p{
 }
 h2{
     font-size: 37px;
+     font-family: 'Lobster', cursive;
 }
