@@ -1,3 +1,7 @@
-<p>{{quote.description}}</p>
-<p> This Quote was posted on {{quote.completeDate|dateCount}} days</p>
-<button (click)= 'quoteDelete(true)'>Delete Quote</button>
+<div *ngIf = 'quote'>
+<span class="row">Submitted By: <h5 class="deep-orange-text pl-3">{{quote.user}}
+</h5>
+<h5 class="pl-5">This Quote was posted on {{quote.completeDate |dateCount}} days ago</h5>
+</span>
+</div>
+<button (click)= 'quoteDelete(true)' type="button" class="btn btn-success">Delete Quote</button>
