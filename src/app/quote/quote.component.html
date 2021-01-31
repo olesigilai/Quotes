@@ -14,7 +14,7 @@
         <hr>
         <app-quote-form (addQuote)="newQuote($event)"></app-quote-form>
         <hr>
-        <div>
+        <div class="">
             <p>Like a Quote!</p>
         </div>
         <div *ngIf='bestQuote'>
@@ -27,7 +27,7 @@
                             <p class="white-text"><i class="fas fa-quote-left pr-1"></i>{{bestQuote}}<i
                                     class="fas fa-quote-right pl-1"></i>
                             </p>
-                            <span class="row white-text">Submitted By: <h4 class="deep-orange-text pl-3">{{bestUser}}
+                            <span class="row white-text">Written By: <h4 class="deep-orange-text pl-3">{{bestUser}}
                                 </h4>
                                 <h4 class="pl-5 white-text">{{date|dateCount}} days ago</h4>
                             </span>
@@ -53,7 +53,7 @@
                         <hr>
                         <p><i class="fas fa-quote-left pr-1"></i>{{Quote.quote}}<i class="fas fa-quote-right pl-1"></i>
                         </p>
-                        <span class="row">Submitted By: <h5 class="deep-orange-text pl-3">{{Quote.user}}
+                        <span class="row">Written By: <h5 class="deep-orange-text pl-3">{{Quote.user}}
                             </h5>
                             <h5 class="pl-5">{{Quote.completeDate |dateCount}} days ago</h5>
                         </span>
