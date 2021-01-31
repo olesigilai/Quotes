@@ -1,4 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 .container{
     font-family: 'Lobster', cursive;
+    background-color: lightblue;
+
+}
+p{
+    font-family: 'Gorditas', cursive;
+    font-weight: bold;
+    font-size: 18px; 
+}
+h2{
+    font-size: 37px;
 }
