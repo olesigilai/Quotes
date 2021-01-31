@@ -1,24 +1,22 @@
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-.container{
-    font-family: 'Shrikhand', cursive;
-    background-color: lightblue;
-    color: black;
-    
-
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+.container {
+  font-family: "Shrikhand", cursive;
+  background-color: lightblue;
+  color: black;
 }
-p{
-    font-family: 'Gorditas', cursive;
-    font-weight: bold;
-    font-size: 18px; 
+p {
+  font-family: "Gorditas", cursive;
+  font-weight: bold;
+  font-size: 18px;
 }
-h2:hover{
-    color: blue;
-    font-size: 37px;
-     font-family: 'Lobster', cursive;
+h2:hover {
+  color: blue;
+  font-size: 37px;
+  font-family: "Lobster", cursive;
 }
-button{
-   float: right; 
+button {
+  float: right;
 }
-p:hover{
-    color:rgb(245, 23, 23);
+p:hover {
+  color: rgb(245, 23, 23);
 }
