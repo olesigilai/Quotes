@@ -11,10 +11,14 @@ p{
     font-weight: bold;
     font-size: 18px; 
 }
-h2{
+h2:hover{
+    color: blue;
     font-size: 37px;
      font-family: 'Lobster', cursive;
 }
 button{
    float: right; 
+}
+p:hover{
+    color:rgb(6, 39, 226);
 }
