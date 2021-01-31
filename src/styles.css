@@ -15,3 +15,6 @@ h2{
     font-size: 37px;
      font-family: 'Lobster', cursive;
 }
+button{
+   float: right; 
+}
